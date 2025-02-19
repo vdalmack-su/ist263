@@ -1,0 +1,7 @@
+body {
+  font-family: 'Times New Roman', serif;
+}
+h1, h2 {color:aqua}
+.evenrow{background-color:darkgrey}
+h1{font-size: 1.5em}
+h2{font-size:1.3em}
