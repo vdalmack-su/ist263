@@ -5,7 +5,10 @@ h1, h2, h3 {color: #003049;}
 nav { background-color: #E3D5CA;}
 nav a {color: #780000;}
 nav a:hover {background-color: #EDEDE9;}
-nav {padding: 10px;}
-nav {margin-bottom: 30px}
+nav {padding: 10px; margin-bottom: 30px; border-radius: 1em;}
 .end_text {float:right;}
 .img1 {float: right; margin-left: 10px;}
+.clear{clear:both;}
+.contact_page{display:flex; background-color: aliceblue; border-radius: 1em; justify-content: space-around;}
+.others{display:flex; background-color: #cce5ff; border-radius: 1em; justify-content: space-around;}
+.address, .links, .map, .form { padding: 10px; margin: 10px;}
