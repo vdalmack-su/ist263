@@ -2,8 +2,8 @@ body {background-color: #FDF0D5;}
 body {color: #003049;}
 a {color: #023E8A;}
 h1, h2, h3 {color: #003049;}
-nav { background-color: gray;}
-nav a {color: #780000;}
+nav { background-color: lightgray;}
+nav a {color: darkorchid;}
 nav a:hover {background-color: #EDEDE9;}
 nav {padding: 10px; margin-bottom: 30px; border-radius: 1em;}
 header {text-align: center; border-radius: 1em; background-color: #003049; color: #FDF0D5;}
