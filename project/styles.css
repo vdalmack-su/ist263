@@ -7,3 +7,5 @@ nav a {color: #780000;}
 nav a:hover {background-color: #EDEDE9;}
 nav {padding: 10px; margin-bottom: 30px; border-radius: 1em;}
 header {text-align: center; border-radius: 1em; background-color: #003049; color: #FDF0D5;}
+header h1{color: #FDF0D5;}
+img {width: 30%;}
