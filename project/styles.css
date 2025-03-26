@@ -8,6 +8,14 @@ nav a:hover {background-color: rgb(240, 205, 211);}
 nav {padding: 10px; margin-bottom: 30px; border-radius: 1em;}
 header {text-align: center; border-radius: 1em; background-color: #003049; color: lightgray;}
 header h1{color: lightgray;}
-img {width: 30%;}
+img {width: 50%;}
 .clear{clear:both;}
 .navvy {float:right}
+.center_text{text-align: center;}
+@media screen and (max-width: 700px) {
+    nav a {
+    max-width:100%; display: block;
+    }
+    #ns {display: none;}
+    nav {padding: 10 px;}
+}
