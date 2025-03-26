@@ -21,6 +21,6 @@ nav {padding: 10px; margin-bottom: 30px; border-radius: 1em;}
     nav a {
     max-width:100%; display: block;
     }
-    #ns {display: none;}
+    .ns {display: none;}
     nav {padding: 10 px;}
 }
