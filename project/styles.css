@@ -8,12 +8,12 @@ nav a:hover {background-color: rgb(240, 205, 211);}
 nav {padding: 10px; margin-bottom: 30px; border-radius: 1em;}
 header {text-align: center; border-radius: 1em; background-color: #003049; color: #f2f2f2;}
 header h1{color: #f2f2f2;}
-.img {max-height: 100vh; object-fit: cover;}
-.img2 {flex-basis:50%}
-.clear{clear:both;}
-.navvy {float:right}
-.center_text{text-align: center;}
+.imgs {max-height: 100vh; object-fit: cover;}
 .photos {display:flex; flex-wrap: wrap; justify-content: center;}
+.img2 {flex-basis:45%; width: 45%; height: auto; object-fit: contain; margin: 5px;}
+.clear{clear:both;}
+.navvy {float:right;}
+.center_text{text-align: center;}
 @media screen and (max-width: 700px) {
     nav a {
     max-width:100%; display: block;
