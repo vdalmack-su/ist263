@@ -3,7 +3,7 @@ body {color: #003049;}
 a {color: #023E8A;}
 h1, h2, h3 {color: #003049;}
 nav { background-color: lightgray;}
-nav a {color: darkorchid;}
+nav a {color: purple;}
 nav a:hover {background-color: rgb(240, 205, 211);}
 nav {padding: 10px; margin-bottom: 30px; border-radius: 1em;}
 header {text-align: center; border-radius: 1em; background-color: #003049; color: lightgray;}
