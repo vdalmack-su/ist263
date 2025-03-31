@@ -1,13 +1,13 @@
-body {background-color: #FDF0D5;}
+body {background-color: light gray;}
 body {color: #003049;}
 a {color: #023E8A;}
 h1, h2, h3 {color: #003049;}
-nav { background-color: lightgray;}
+nav { background-color: #f2f2f2;}
 nav a {color: purple;}
 nav a:hover {background-color: rgb(240, 205, 211);}
 nav {padding: 10px; margin-bottom: 30px; border-radius: 1em;}
-header {text-align: center; border-radius: 1em; background-color: #003049; color: lightgray;}
-header h1{color: lightgray;}
+header {text-align: center; border-radius: 1em; background-color: #003049; color: #f2f2f2;}
+header h1{color: #f2f2f2;}
 img {max-height: 100vh; object-fit: cover;}
 .clear{clear:both;}
 .navvy {float:right}
@@ -22,4 +22,4 @@ img {max-height: 100vh; object-fit: cover;}
 }
 .histFlex {display:flex; padding: 5px; justify-content: space-between;}
 #buttons { flex-basis: 13%; margin: 10px; padding: 5px;}
-#text {float:right; flex-basis:85%; background-color: #003049; color: lightgray; text-align: center;}
+#text {float:right; flex-basis:85%; background-color: #003049; color: #f2f2f2; text-align: center;}
