@@ -8,14 +8,18 @@ nav a:hover {background-color: rgb(240, 205, 211);}
 nav {padding: 10px; margin-bottom: 30px; border-radius: 1em;}
 header {text-align: center; border-radius: 1em; background-color: #003049; color: lightgray;}
 header h1{color: lightgray;}
-img {width: 50%;}
+img {max-height: 100vh; object-fit: cover;}
 .clear{clear:both;}
 .navvy {float:right}
 .center_text{text-align: center;}
+.photos {display:flex; flex-wrap: wrap; justify-content: center;}
 @media screen and (max-width: 700px) {
     nav a {
     max-width:100%; display: block;
     }
-    #ns {display: none;}
+    .ns {display: none;}
     nav {padding: 10 px;}
 }
+.histFlex {display:flex; padding: 5px; justify-content: space-between;}
+#buttons { flex-basis: 13%; margin: 10px; padding: 5px;}
+#text {float:right; flex-basis:85%; background-color: #003049; color: lightgray; text-align: center;}

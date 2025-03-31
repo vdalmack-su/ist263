@@ -3,12 +3,107 @@
 <hmtl lang = en>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <meta name="viewport" content="width=device-width">
         <title>Water Towers</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/cb9f22cfae.js" crossorigin="anonymous"></script>
+        <style>
+            * {box-sizing:border-box}
+            .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            }
+            .mySlides {
+            display: none;
+            }
+
+            .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: lightgray;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            }
+
+            .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            }
+
+            .prev:hover, .next:hover {
+            background-color: #003049;
+            }
+
+            /* Caption text */
+            .text {
+            color: #f2f2f2;
+            background-color: darkgrey;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            }
+
+            /* Fading animation */
+            .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+            }
+        </style>
+        <script>
+            let slideIndex = 0;
+            function showSlides() {
+                let slides = document.getElementsByClassName("mySlides");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1; }
+                slides[slideIndex - 1].style.display = "block";
+                    }
+
+            function plusSlides(n) {
+                slideIndex += n - 1;
+                if (slideIndex < 0) { slideIndex = document.getElementsByClassName("mySlides").length - 1; }
+                showSlides();
+                }
+
+            function currentSlide(n) {
+                slideIndex = n - 1;
+                showSlides();
+                 }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                showSlides();
+            });
+    </script>
     </head>
     <body>
-        <nav class="navvy"><a href="home.html" target="_blank">Home Page</a>  |  <a href="history.html" target="_blank">History</a>  |  <a href="photographer.html" target="_blank">About the Photographer</a></nav>
+        <nav class="navvy"><a href="home.html" target="_blank">Home Page</a><span class="ns">  |  </span><a href="history.html" target="_blank">History</a><span class="ns">  |  </span><a href="photographer.html" target="_blank">About the Photographer</a></nav>
         <div class="clear"></div>
         <header>
             <h1>
@@ -16,20 +111,53 @@
             </h1>
         </header>
         <main>
-            <img src="images/Bryan, Ohio.jpg" class="img" alt="Dums Dums Water Tower">
-            <P> Above is a picture of the DumDums factory water tower in Bryan Ohio. This water tower is used not only by the factory but also by the entire city of Bryan, Ohio. </P>
-            <img src="images/Muscatine 1282.JPG" class="img" alt="Purple Muscatine Water Tower">
-            <P> This is a picture of the Muscatine water tower. It is notable to locals for its changing color at night from LED lights on the ground pointed up at it. Common colors are purple, blue, and green. </P>
-            <img src="images/Fairfield.JPG" class="img" alt="fairifiled iowa watertower with dog">
-            <P> Above is a picture of the water tower in Fairfield, Iowa. This picture was taken from their notable historic town square. </P>
-            <img src="images/Adair.JPG" class="img" alt="Adair smiley face watertower">
-            <P> This is a picture of the Adair, Iowa water tower. Adair is a small community near Des Moines that is known for its unique water tower pictured above. </P>
-            <img src="images/Ol Threshers 9437.JPG" class="img" alt="Steam Engine Water Tower">
-            <P> This is a picture of the historic water tower for steam trains that is still used to power steam engines at the Midwest Old Threshers Reunion’s Midwest Central Railroad. </P>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="images/Bryan, Ohio.jpg" class= img1 style="width:100%">
+                  <div class="text">Above is a picture of the DumDums factory water tower in Bryan Ohio. This water tower is used not only by the factory but also by the entire city of Bryan, Ohio.</div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="images/Muscatine 1282.JPG" style="width:100%">
+                  <div class="text">This is a picture of the Muscatine water tower. It is notable to locals for its changing color at night from LED lights on the ground pointed up at it. Common colors are purple, blue, and green.</div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="images/Fairfield.JPG" style="width:100%">
+                  <div class="text">Above is a picture of the water tower in Fairfield, Iowa. This picture was taken from their notable historic town square.</div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="images/Adair.JPG" style="width:100%">
+                    <div class="text">This is a picture of the Adair, Iowa water tower. Adair is a small community near Des Moines that is known for its unique water tower pictured above.</div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="images/Ol Threshers 9437.JPG" style="width:100%">
+                    <div class="text">This is a picture of the historic water tower for steam trains that is still used to power steam engines at the Midwest Old Threshers Reunion’s Midwest Central Railroad.</div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+                </div>
+              
+
+              </div>
         </main>
         <footer>
             <hr>
-            &copy;2025
+            &copy;Victoria Almack 2025
         </footer>
     </body>
 </hmtl>

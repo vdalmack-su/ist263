@@ -3,12 +3,44 @@
 <hmtl lang = en>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <meta name="viewport" content="width=device-width">
         <title>History</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/cb9f22cfae.js" crossorigin="anonymous"></script>
+        <script>
+        function ShowBryan() {
+          var bryanDiv = document.getElementById("Bryan");
+          bryanDiv.style.display = (bryanDiv.style.display === "none") ? "block" : "none";
+        }
+
+        function ShowMusc() {
+         var muscDiv = document.getElementById("Musc");
+         muscDiv.style.display = (muscDiv.style.display === "none") ? "block" : "none";
+        }
+        function ShowFair() {
+         var fairDiv = document.getElementById("Fair");
+         fairDiv.style.display = (fairDiv.style.display === "none") ? "block" : "none";
+        }
+        function ShowAdair() {
+         var adairDiv = document.getElementById("Adair");
+         adairDiv.style.display = (adairDiv.style.display === "none") ? "block" : "none";
+        }
+        function ShowMOTR() {
+         var motrDiv = document.getElementById("MOTR");
+         motrDiv.style.display = (motrDiv.style.display === "none") ? "block" : "none";
+        }
+
+    document.addEventListener("DOMContentLoaded", function() {
+     document.getElementById("Bryan").style.display = "block";
+     document.getElementById("Musc").style.display = "none";
+     document.getElementById("Fair").style.display = "none";
+     document.getElementById("Adair").style.display = "none";
+     document.getElementById("MOTR").style.display = "none";
+    });
+        </script>
     </head>
     <body>
-        <nav class="navvy"><a href="home.html" target="_blank">Home Page</a>  |  <a href="history.html" target="_blank">History</a>  |  <a href="photographer.html" target="_blank">About the Photographer</a></nav>
+        <nav class="navvy"><a href="home.html" target="_blank">Home Page</a><span class="ns">  |  </span><a href="history.html" target="_blank">History</a><span class="ns">  |  </span><a href="photographer.html" target="_blank">About the Photographer</a></nav>
         <div class="clear"></div>
         <header>
             <h1>
@@ -16,16 +48,45 @@
             </h1>
         </header>
         <main>
-            <p>Bryan, Ohio is home to the DumDums factory that makes every DumDums sucker, along with other Spangler branded candies. Bryan is a modern model of a company town with the factory being the main source of employment in Bryan, and many members of families work in the factory. The water tower for the town shows this clearly with large DumDums depicted on the tower instead of the town name as is common in most cities and towns. This is because many public amenities in Bryan such as water are owned by the factory, or family members of the owner of the factory. </p>
-            <p>Muscatine is a medium-sized town in Southeast Iowa. It is a historic river town that made its money from shipping along the river, mainly through the logging industry in the nineteenth century along with railroad business. Mark Twain briefly lived in Muscatine and worked on their newspaper with his brother, the city is featured in his book Life on the Mississippi. </p>
-            <p>Fairfield, Iowa is a small town in Southeast Iowa known for its abundance of start-up companies and also being home to Maharishi Vedic City, which is known to the Maharishi as the center of the universe. It is the city in Iowa with the most solar powered and eco-friendly homes. Many of the homes are built in the Maharishi Sthapatya Veda architecture style, with its most notable feature being homes that face either due East or due North. </p>
-            <p>Adair is a small town that historically was founded to support the Rock Island Express train route, and a train was famously robbed by Jesse James in Adair. The modern-day Adair is supported by the Interstate 80 highway which is one of the largest shipping and travel corridors in the United States. Its large smiley face water tower is visible from the highway. </p>
-            <p>The Midwest Old Thresher Reunion is a hidden treasure of southeast Iowa. The reunion is a large festival which displays historic homestead life, gas and steam powered engines including cars, tractors, specific machines like threshing machines and older steam powered cars which were often used as tractors and predate modern cars. They also host world class concerts that are free with admission (admission is $14 for adults and $5 for children). Some previous concerts were by  George Strait, Johnny Cash, June Carter, Kenny Rogers, Brad Paisley, Willie Nelson and LeAnn Rimes. The festival also features a few acres of campground which are serviced by electric classic trolleys. </p>
-
+<div class="histFlex">
+<div id="buttons">
+    <button onclick="ShowBryan()">Bryan, Ohio</button>
+    <br>
+    <br>
+    <button onclick="ShowMusc()">Muscatine, Iowa</button>
+    <br>
+    <br>
+    <button onclick="ShowFair()">Fairfield, Iowa</button>
+    <br>
+    <br>
+    <button onclick="ShowAdair()">Adair, Iowa</button>
+    <br>
+    <br>
+    <button onclick="ShowMOTR()">Fairfield, Iowa</button>
+</div>
+<div id="text">
+    <div id="Bryan">
+        <p>Bryan, Ohio is home to the DumDums factory that makes every DumDums sucker, along with other Spangler branded candies. Bryan is a modern model of a company town with the factory being the main source of employment in Bryan, and many members of families work in the factory. The water tower for the town shows this clearly with large DumDums depicted on the tower instead of the town name as is common in most cities and towns. This is because many public amenities in Bryan such as water are owned by the factory, or family members of the owner of the factory. </p>
+    </div>
+    <div id="Musc">
+        <p>Muscatine is a medium-sized town in Southeast Iowa. It is a historic river town that made its money from shipping along the river, mainly through the logging industry in the nineteenth century along with railroad business. Mark Twain briefly lived in Muscatine and worked on their newspaper with his brother, the city is featured in his book Life on the Mississippi. </p>
+    </div>
+    <div id="Fair">
+        <p>Fairfield, Iowa is a small town in Southeast Iowa known for its abundance of start-up companies and also being home to Maharishi Vedic City, which is known to the Maharishi as the center of the universe. It is the city in Iowa with the most solar powered and eco-friendly homes. Many of the homes are built in the Maharishi Sthapatya Veda architecture style, with its most notable feature being homes that face either due East or due North. </p>
+    </div>
+    <div id="Adair">
+        <p>Adair is a small town that historically was founded to support the Rock Island Express train route, and a train was famously robbed by Jesse James in Adair. The modern-day Adair is supported by the Interstate 80 highway which is one of the largest shipping and travel corridors in the United States. Its large smiley face water tower is visible from the highway. </p>
+    </div>
+    <div id="MOTR">
+        <p>The Midwest Old Thresher Reunion is a hidden treasure of southeast Iowa. The reunion is a large festival which displays historic homestead life, gas and steam powered engines including cars, tractors, specific machines like threshing machines and older steam powered cars which were often used as tractors and predate modern cars. They also host world class concerts that are free with admission (admission is $14 for adults and $5 for children). Some previous concerts were by  George Strait, Johnny Cash, June Carter, Kenny Rogers, Brad Paisley, Willie Nelson and LeAnn Rimes. The festival also features a few acres of campground which are serviced by electric classic trolleys. </p>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
         </main>
         <footer>
             <hr>
-            &copy;2025
+            &copy;Victoria Almack 2025
         </footer>
     </body>
 </hmtl>
