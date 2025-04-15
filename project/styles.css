@@ -14,6 +14,7 @@ header h1{color: #f2f2f2;}
 .clear{clear:both;}
 .navvy {float:right;}
 .center_text{text-align: center;}
+.floR {float:right;}
 @media screen and (max-width: 700px) {
     nav a {
     max-width:100%; display: block;
