@@ -1,7 +1,7 @@
 body {background-color: light gray;}
 body {color: #003049;}
 a {background-color: #003049; color: #f2f2f2;}
-a:hover {background-color: rgb(240, 205, 211);}
+a:hover {background-color: #c8c9df;}
 h1, h2, h3 {color: #003049;}
 nav { background-color: #f2f2f2;}
 nav a {color: purple;}
