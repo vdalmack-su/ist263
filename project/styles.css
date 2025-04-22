@@ -1,3 +1,10 @@
+
+.playfair-display-serif_text {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
 body {background-color: light gray;}
 body {color: #003049;}
 a {background-color: #003049; color: #f2f2f2;}
